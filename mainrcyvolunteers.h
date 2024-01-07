@@ -15,6 +15,11 @@ public:
     explicit MainRCYVolunteers(QWidget *parent = nullptr);
     ~MainRCYVolunteers();
 
+private slots:
+
+
+    void on_pushButton_Logout_clicked();
+
 private:
     Ui::MainRCYVolunteers *ui;
 };
