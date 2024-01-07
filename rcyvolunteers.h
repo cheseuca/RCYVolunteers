@@ -17,6 +17,9 @@ public:
     RCYVolunteers(QWidget *parent = nullptr);
     ~RCYVolunteers();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::RCYVolunteers *ui;
 };

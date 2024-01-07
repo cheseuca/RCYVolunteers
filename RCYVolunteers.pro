@@ -10,12 +10,15 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    mainrcyvolunteers.cpp \
     rcyvolunteers.cpp
 
 HEADERS += \
+    mainrcyvolunteers.h \
     rcyvolunteers.h
 
 FORMS += \
+    mainrcyvolunteers.ui \
     rcyvolunteers.ui
 
 TRANSLATIONS += \
