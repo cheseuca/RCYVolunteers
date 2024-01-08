@@ -34,6 +34,10 @@ private slots:
 
     void closeMainWindow();
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_AddVolunteer_clicked();
+
 private:
     Ui::MainRCYVolunteers *ui;
 };

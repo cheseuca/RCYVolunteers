@@ -25,8 +25,10 @@ void RCYVolunteers::on_pushButton_clicked()
         QMessageBox::information(this, "Sign In", "Username and Password are Correct");
 
         close();
+
         MainRCYVolunteers *mainrcyvolunteers = new MainRCYVolunteers;
         mainrcyvolunteers->show();
+
     }else{
         QMessageBox::warning(this,"Sign In", "Username or Password are incorrect");
     }

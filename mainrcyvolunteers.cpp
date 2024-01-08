@@ -1,6 +1,7 @@
 #include "mainrcyvolunteers.h"
 #include "ui_mainrcyvolunteers.h"
 #include "logoutpanel.h"
+#include "addrcyvolunteers.h"
 
 MainRCYVolunteers::MainRCYVolunteers(QWidget *parent)
     : QMainWindow(parent)
@@ -20,7 +21,6 @@ void MainRCYVolunteers::on_pushButton_Logout_clicked()
 {
     LogoutPanel *logoutPanel = new LogoutPanel(this);
 
-    // Connect the signal from LogoutPanel to the closeMainWindow slot
     connect(logoutPanel, &LogoutPanel::requestMainWindowClose, this, &MainRCYVolunteers::closeMainWindow);
 
     logoutPanel->exec();
@@ -28,7 +28,7 @@ void MainRCYVolunteers::on_pushButton_Logout_clicked()
 
 void MainRCYVolunteers::closeMainWindow()
 {
-    // Close the main window
+
     this->close();
 }
 
@@ -66,5 +66,18 @@ void MainRCYVolunteers::on_pushButton_Schedules_3_clicked()
 void MainRCYVolunteers::on_pushButton_Volunteers_3_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainRCYVolunteers::on_pushButton_clicked()
+{
+
+}
+
+
+void MainRCYVolunteers::on_pushButton_AddVolunteer_clicked()
+{
+    AddRCYVolunteers *addrcyvolunteers = new AddRCYVolunteers;
+    addrcyvolunteers->show();
 }
 

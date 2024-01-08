@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,20 +9,26 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addrcyvolunteers.cpp \
     logoutpanel.cpp \
     main.cpp \
     mainrcyvolunteers.cpp \
-    rcyvolunteers.cpp
+    rcyvolunteers.cpp \
+    removercyvolunteers.cpp
 
 HEADERS += \
+    addrcyvolunteers.h \
     logoutpanel.h \
     mainrcyvolunteers.h \
-    rcyvolunteers.h
+    rcyvolunteers.h \
+    removercyvolunteers.h
 
 FORMS += \
+    addrcyvolunteers.ui \
     logoutpanel.ui \
     mainrcyvolunteers.ui \
-    rcyvolunteers.ui
+    rcyvolunteers.ui \
+    removercyvolunteers.ui
 
 TRANSLATIONS += \
     RCYVolunteers_en_PH.ts
