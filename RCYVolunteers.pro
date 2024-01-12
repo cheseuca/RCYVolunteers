@@ -14,18 +14,21 @@ SOURCES += \
     main.cpp \
     mainrcyvolunteers.cpp \
     rcyvolunteers.cpp \
+    setdate.cpp
 
 HEADERS += \
     addrcyvolunteers.h \
     logoutpanel.h \
     mainrcyvolunteers.h \
     rcyvolunteers.h \
+    setdate.h
 
 FORMS += \
     addrcyvolunteers.ui \
     logoutpanel.ui \
     mainrcyvolunteers.ui \
     rcyvolunteers.ui \
+    setdate.ui
 
 TRANSLATIONS += \
     RCYVolunteers_en_PH.ts
@@ -36,3 +39,7 @@ CONFIG += embed_translations
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    imgs.qrc
+    RC_ICONS = RCY.ico

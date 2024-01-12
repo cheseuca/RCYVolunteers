@@ -15,7 +15,6 @@ public:
     explicit LogoutPanel(QWidget *parent = nullptr);
     ~LogoutPanel();
 
-
 private slots:
 
     void on_pushButton_Logout_clicked();

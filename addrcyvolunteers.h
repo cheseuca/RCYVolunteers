@@ -1,19 +1,19 @@
 #ifndef ADDRCYVOLUNTEERS_H
 #define ADDRCYVOLUNTEERS_H
 
-#include <QDialog>
-#include <QSql>
-#include <QSqlQuery>
-#include <QSqlRecord>
-#include <QSqlError>
-#include <QSqlDatabase>
+#include <QBuffer>
 #include <QDebug>
-#include <QString>
+#include <QDialog>
 #include <QFile>
 #include <QFileDialog>
-#include <QPixmap>
 #include <QMessageBox>
-#include <QBuffer>
+#include <QPixmap>
+#include <QSql>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
+#include <QSqlRecord>
+#include <QString>
 
 namespace Ui {
 class AddRCYVolunteers;
@@ -35,7 +35,6 @@ private slots:
 private:
     Ui::AddRCYVolunteers *ui;
     QSqlDatabase database;
-    QSqlQuery addquery;
 };
 
 #endif // ADDRCYVOLUNTEERS_H
