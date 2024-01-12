@@ -2,6 +2,14 @@
 #define MAINRCYVOLUNTEERS_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include <QString>
+#include <QDateTime>
+#include <QSql>
+#include <QSqlQuery>
+#include <QSqlRecord>
+#include <QSqlError>
+#include <QSqlDatabase>
 
 namespace Ui {
 class MainRCYVolunteers;
@@ -34,12 +42,13 @@ private slots:
 
     void closeMainWindow();
 
-    void on_pushButton_clicked();
-
     void on_pushButton_AddVolunteer_clicked();
+
+    void on_calendarWidget_clicked(const QDate &date);
 
 private:
     Ui::MainRCYVolunteers *ui;
+    QSqlDatabase db;
 };
 
 #endif // MAINRCYVOLUNTEERS_H

@@ -39,7 +39,7 @@
     <string>Insert Volunteer's Photo</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_Profession">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -65,8 +65,8 @@
   <widget class="QPushButton" name="pushButton_AddVolunteer">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>340</y>
+     <x>380</x>
+     <y>330</y>
      <width>121</width>
      <height>29</height>
     </rect>
@@ -188,6 +188,29 @@
    </property>
    <property name="text">
     <string>Maab ID</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_VolunteerType">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>270</y>
+     <width>151</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>270</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volunteer Type</string>
    </property>
   </widget>
  </widget>
