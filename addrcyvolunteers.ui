@@ -32,11 +32,12 @@
      <x>350</x>
      <y>130</y>
      <width>181</width>
-     <height>29</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Insert Volunteer's Photo</string>
+    <string>Insert Volunteer's Photo
+(jpg Files Only)</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_Profession">
@@ -211,6 +212,19 @@
    </property>
    <property name="text">
     <string>Volunteer Type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_VolunteerPhoto">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>20</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

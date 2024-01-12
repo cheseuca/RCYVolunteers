@@ -10,7 +10,10 @@
 #include <QDebug>
 #include <QString>
 #include <QFile>
+#include <QFileDialog>
 #include <QPixmap>
+#include <QMessageBox>
+#include <QBuffer>
 
 namespace Ui {
 class AddRCYVolunteers;
@@ -32,6 +35,7 @@ private slots:
 private:
     Ui::AddRCYVolunteers *ui;
     QSqlDatabase database;
+    QSqlQuery addquery;
 };
 
 #endif // ADDRCYVOLUNTEERS_H

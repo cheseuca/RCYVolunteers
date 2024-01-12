@@ -14,21 +14,18 @@ SOURCES += \
     main.cpp \
     mainrcyvolunteers.cpp \
     rcyvolunteers.cpp \
-    removercyvolunteers.cpp
 
 HEADERS += \
     addrcyvolunteers.h \
     logoutpanel.h \
     mainrcyvolunteers.h \
     rcyvolunteers.h \
-    removercyvolunteers.h
 
 FORMS += \
     addrcyvolunteers.ui \
     logoutpanel.ui \
     mainrcyvolunteers.ui \
     rcyvolunteers.ui \
-    removercyvolunteers.ui
 
 TRANSLATIONS += \
     RCYVolunteers_en_PH.ts
